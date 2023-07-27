@@ -1,0 +1,28 @@
+body {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 20% 40% 30% 10%;
+    grid-template-areas: 
+    "header"
+    "feature"
+    ;
+    
+}
+.header {
+    grid-template-columns: 1 / span 2;
+    grid-template-rows: 1;
+    padding: 7em;
+    margin: auto;
+    border: 2px red;
+}
+
+span {
+    display: block;
+    background: rgb(103, 102, 102);
+    margin: auto;
+}
+
+.img {
+    grid-template-columns: 1;
+    grid-template-rows: 2;
+}
