@@ -1,11 +1,4 @@
 body {
-    /* display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 20% 40% 30% 10%;
-    grid-template-areas: 
-    "header"
-    "img" "feature"
-    ; */
     min-height: 600px;
     max-width: 80rem;
 }
@@ -18,7 +11,7 @@ body {
     grid-template-rows: 1;
     padding: 2em;
     margin: 0 auto;
-    color:black;
+    color:rgb(38, 38, 38);;
     font-family: caprasimo;
     
 }
@@ -37,11 +30,6 @@ body {
     h3 {
         color: whitesmoke;
     }
-
-
-.feature-text {
- 
-}
 
 .feature {
     display: inline-block;
@@ -100,16 +88,15 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-
     padding: 3rem;
-    padding-bottom: 10rem;
+    padding-bottom: 5rem;
     font-family: caprasimo;
     font-size: 1.5rem;
     font-weight: 1rem;
     gap: 1rem;
 }
 .header, nav, a {
-    color: black;
+    color: rgb(38, 38, 38);;
 }
 
 .home-gallery {
@@ -120,7 +107,6 @@ nav {
     padding: 0;
     gap: 1.5em;
     text-align: center;
-    border: 2px rgb(177, 33, 33);
     padding-block: 10rem;
     padding-top: 100px;
     margin-top: 100px;
@@ -130,11 +116,20 @@ nav {
 
 .footer {
     display: block;
-    background:rgb(97, 97, 97);
+    background:rgb(38, 38, 38);
     margin:0 ;
     margin-top: 100px;
-    padding: 36px 0 42px;
+    padding-top: 36px  ;
+    padding-bottom: 42px;
+    padding-right: 500px;
 }
+/* .footer div p {
+	color: #fff;
+	float: left;
+	line-height: 44px;
+	margin: 0 0 0 10px;
+	padding: 0;
+} */
 .footer div ul {
 	display: block;
 	float: right;
@@ -143,6 +138,47 @@ nav {
 	padding: 0;
 	width: 256px;
 }
-i {
-    border: whitesmoke;
+
+
+.footer div ul li {
+	display: block;
+	float: left;
+	list-style: none;
+	margin: 0 10px;
+	padding: 0;
+	width: 44px;
 }
+footer div ul li a {
+	display: block;
+	height: 44px;
+	margin: 0;
+	padding: 0;
+	text-indent: -99999px;
+	width: 44px;
+    color: whitesmoke;
+}
+.footer div ul li #twitter {
+    color:whitesmoke;
+	background-position: 0 0;
+}
+.footer div ul li #facebook {
+    color: whitesmoke;
+    background-position: 0 -44px;
+}
+.footer div ul li #google {
+    color: whitesmoke;
+    background-position: 0 -88px;
+}
+
+@media screen and (max-width: 400px) {
+
+    .home-gallery {
+        display: block;
+    }
+    .div feature-text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+

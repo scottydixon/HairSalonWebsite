@@ -1,0 +1,32 @@
+body {
+    min-height: 600px;
+    max-width: 100rem;
+}
+.header {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: header;
+    grid-template-columns: 1 / span 2;
+    grid-template-rows: 1;
+    padding: 2em;
+    margin: 0 auto;
+    color:rgb(38, 38, 38);;
+    font-family: caprasimo;
+    
+}
+
+    h1 {
+        font-size: 40px;
+    }
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 3rem;
+        padding-bottom: 5rem;
+        font-family: caprasimo;
+        font-size: 1.5rem;
+        font-weight: 1rem;
+        gap: 1rem;
+    }
