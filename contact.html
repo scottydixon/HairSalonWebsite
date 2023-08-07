@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Roboto+Mono&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Calistoga&family=Caprasimo&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <title>Contact us</title>
+</head>
+<script src="https://kit.fontawesome.com/a686390b42.js" crossorigin="anonymous"></script>
+<body>
+    <div class= header>
+        <h1>Mustache Mania</h1>
+    </div>
+        <div>
+            <nav>
+                <a href="landing.html" >Home</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact us</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="blog.html">Blog</a>
+            </nav>
+        </div>
+        <h2>Contact Us</h2>
+        <form action="results.html" method="GET" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Lets trim dat stashe</legend>
+            <div>
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" >
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" >
+            </div>
+            <div>
+                <label for="age">Age</label>
+                <input type="number" name="age" id="age" min="1" max="200" step="5">
+            </div>
+            <p>Recieve a birthday wish!</p>
+            <div>
+                <label for="date">Birthdate</label>
+                <input type="date" name="date" id="date" min="2019-06-10">
+            </div>
+            <div>
+                <p>How did you hear about us?</p>
+                <div class="checks">
+                    <input type="checkbox" name="twitter" id="twitter">
+                    <label for="twitter">Twitter</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="google" id="google">
+                    <label for="google">Google</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="facebook" id="facebook">
+                    <label for="facebook">Facebook</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="wordofmouth" id="wordofmouth">
+                    <label for="wordofmouth">Word of mouth</label>
+                </div>
+            </div>
+            <div class="checks">
+                <p>Do you want to be contacted back?</p>
+            <div>
+                <input type="radio" name="yes" id="yes" value="yes">
+                <label for="yes">Yes</label>
+            </div>
+            <div>
+                <input type="radio" name="no" id="no" value="no">
+                <label for="no">No</label>
+            </div>
+            </div>
+            <div>
+                <label for="comments">Comments</label>
+                <textarea id="comments" name="comments" minlength="20" maxlength="500"></textarea>
+            </div>
+                <input type="hidden" name="hidden" value="hi">
+            
+            
+            
+            <input type="reset" id="reset" value="Reset">
+            <input type="submit" id="submit" value="Submit">
+        </fieldset>
+        </form>
+        <div class="footer">
+            <div>
+                <h3>@ 2023 by Mustache Mainia. All rights reserved.</h3>
+                <ul>
+                    <li>
+                    <a href="https://twitter.com/"> <i class="fa-brands fa-square-twitter fa-xl"  id="twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://facebook.com/"><i class="fa-brands fa-square-facebook fa-xl" id="facebook"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://google.com/"><i class="fa-brands fa-square-google-plus fa-xl" id="google"></i></a>
+                    </li>
+                    <li></li>
+                </ul>
+            </div>  
+</body>
+</html>

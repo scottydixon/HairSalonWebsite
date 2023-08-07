@@ -1,6 +1,16 @@
 body {
     min-height: 600px;
     max-width: 100rem;
+    background-color: whitesmoke;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+    "img" 
+    "header"
+    "about";
+    column-gap: 1rem;
 }
 .header {
     display:flex;
@@ -11,13 +21,20 @@ body {
     grid-template-rows: 1;
     padding: 2em;
     margin: 0 auto;
-    color:rgb(38, 38, 38);;
+    color:rgb(38, 38, 38);
     font-family: caprasimo;
     
 }
 
+.header, nav, a {
+    color: rgb(38, 38, 38);
+}
+
     h1 {
-        font-size: 40px;
+        font-size: 60px;
+    }
+    h3 {
+        color: whitesmoke;
     }
     nav {
         display: flex;
@@ -30,3 +47,73 @@ body {
         font-weight: 1rem;
         gap: 1rem;
     }
+    .img {
+        grid-area: img;
+        grid-column: 0;
+        max-width: 100%;
+    }
+
+    .responsive {
+        max-width: 450px;
+        max-height: 600px;
+        width:100%;
+        height:auto;
+    
+    }
+
+    li {
+        list-style-type: none;
+    }
+
+    .footer {
+        display: block;
+        background:rgb(38, 38, 38);
+        margin:0 ;
+        margin-top: 100px;
+        padding-top: 36px  ;
+        padding-bottom: 42px;
+        padding-right: 500px;
+    }
+    
+    .footer div ul {
+        display: block;
+        float: right;
+        margin: 0;
+        overflow: hidden;
+        padding: 0;
+        width: 256px;
+    }
+    
+    
+    .footer div ul li {
+        display: block;
+        float: left;
+        list-style: none;
+        margin: 0 10px;
+        padding: 0;
+        width: 44px;
+    }
+    footer div ul li a {
+        display: block;
+        height: 44px;
+        margin: 0;
+        padding: 0;
+        text-indent: -99999px;
+        width: 44px;
+        color: whitesmoke;
+    }
+    .footer div ul li #twitter {
+        color:whitesmoke;
+        background-position: 0 0;
+    }
+    .footer div ul li #facebook {
+        color: whitesmoke;
+        background-position: 0 -44px;
+    }
+    .footer div ul li #google {
+        color: whitesmoke;
+        background-position: 0 -88px;
+    }
+
+    
+    
