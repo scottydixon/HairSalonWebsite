@@ -1,8 +1,3 @@
-body {
-    min-height: 600px;
-    max-width: 80rem;
-    background-color: whitesmoke;
-}
 .header {
     display:flex;
     justify-content: center;
@@ -23,9 +18,17 @@ body {
     h2 {
         color: whitesmoke;
         background: rgb(38, 38, 38);
+        margin-left: 550px;
         font-size: 30px;
         font-weight:100;
         font-family:calistoga ;
+    }
+    h3 {
+        color: whitesmoke;
+    }
+
+    li {
+        list-style-type: none;
     }
     nav {
         display: flex;
@@ -41,55 +44,10 @@ body {
     .header, nav, a {
         color: rgb(38, 38, 38);
     }
-    
-    img {
-        max-width: 100%;
-    } 
-    li {
-        list-style-type: none;
-    }
-    ul {
-        margin: 0 auto;
-        overflow: hidden;
-        padding: 24px 0 0;
-        width: 960px;
-    }
-    ul li {
-        display: block;
-        float: left;
-        margin: 0 10px 20px;
-        padding: 0;
-        width: 300px;
-    }
-    ul li a {
-        color: #000;
-        display: block;
-        font-family: poller_oneregular;
-        font-size: 20px;
-        font-weight: normal;
-        margin: 0;
-        padding: 0;
-        text-align: center;
-        text-decoration: none;
-        text-transform: uppercase;
-    }
-    ul li a img {
-        border: 2px solid #1a1a1a;
-        display: block;
-        margin: 0;
-        padding: 0;
-        opacity: .8;
-        transition: 0.5s ease-in-out;
-    }
-
-    li {
-        list-style-type: none;
-    }
 
     .footer {
         display: block;
         background:rgb(38, 38, 38);
-        color: whitesmoke;
         margin:0 ;
         margin-top: 100px;
         padding-top: 36px  ;
@@ -135,17 +93,4 @@ body {
     .footer div ul li #google {
         color: whitesmoke;
         background-position: 0 -88px;
-    }
-
-
-    @media screen and (max-width: 400px) {
-
-        .home-gallery {
-            display: block;
-        }
-        .div feature-text {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
     }

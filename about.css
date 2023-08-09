@@ -46,6 +46,7 @@ body {
         font-size: 1.5rem;
         font-weight: 1rem;
         gap: 1rem;
+        color: rgb(38, 38, 38)
     }
     .img {
         grid-area: img;
@@ -59,6 +60,10 @@ body {
         width:100%;
         height:auto;
     
+    }
+
+    .about {
+        margin-right: 1rem;
     }
 
     li {
