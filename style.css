@@ -1,6 +1,7 @@
 body {
     min-height: 600px;
     max-width: 80rem;
+    /* min-width: 40em; */
     background-color: whitesmoke;
 }
 .header {
@@ -78,8 +79,6 @@ p {
 img {
     grid-area: img;
     max-width: 100%;
-    grid-template-columns: 1 / 2;
-    grid-template-rows: 2 / 3;
 }
 li {
     list-style-type: none;
@@ -166,6 +165,10 @@ footer div ul li a {
 
 @media screen and (max-width: 400px) {
 
+    body {
+        max-width: 380px;
+    }
+
     .home-gallery {
         display: block;
     }
@@ -174,10 +177,26 @@ footer div ul li a {
         align-items: center;
         justify-content: center;
     }
-
-    .footer {
-        padding-right: ;
+    .feature {
+        max-width: 380px;
+    }
+    .nav  {
         
     }
+
+  /*   .footer {
+        display: flex;
+        padding-left: 14em;
+        max-width: 400px;
+        
+    } */
+    h3 {
+        
+    }
+    .img {
+        max-width: 100%;
+    }
 }
+
+
 
